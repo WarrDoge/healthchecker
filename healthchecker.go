@@ -11,7 +11,7 @@ func main() {
 	wait := 30
 	for true {
 		fmt.Println("Sending healthcheck")
-		resp, err := http.Get("http://164.92.175.244:8080")
+		resp, err := http.Get("http://<SERVER_IP:PORT>")
 		if err != nil {
 			fmt.Println("Failed to send healthcheck")
 			fmt.Println("Retrying after " + strconv.Itoa(wait) + " seconds")
