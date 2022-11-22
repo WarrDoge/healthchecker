@@ -1,1 +1,0 @@
-wscript start_healthchecks.vbs
